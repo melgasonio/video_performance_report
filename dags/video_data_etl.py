@@ -17,6 +17,8 @@ import os
 # Modularized helper functions
 from include.custom_functions.video_functions import get_videos_stats
 
+t_log = logging.getLogger("airflow.task")
+
 @dag(
     start_date=datetime(2025, 12, 8),
     schedule="@daily",
