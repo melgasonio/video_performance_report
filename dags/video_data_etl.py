@@ -35,3 +35,65 @@ t_log = logging.getLogger("airflow.task")
 )
 def video_data_etl():
     
+    # Setup task
+    @task
+    def create_perf_table_in_duckdb(
+        duckdb_instance_name: str = _DUCKDB_INSTANCE_NAME,
+        table_name: str = _DUCKDB_TABLE_NAME,
+    ) -> None:
+        t_log.info("Creating videos performance table in DuckDB")
+        
+        cursor = duckdb.connect(duckdb_instance_name)
+        
+        cursor.execute(
+            f"""
+            CREATE TABLE IF NOT EXISTS {table_name} (
+                id INT PRIMARY KEY,
+                name STRING,
+                view INT,
+                comments INT,
+                likes INT,
+            )"""
+        )
+        cursor.close()
+        
+        t_log.info(f"Table {table_name} created in DuckDB")
+        
+    # Extract task
+    @task
+    def extract_video_data(num_videos: int = _NUM_VIDEOS_TOTAL) -> pd. DataFrame:
+        videos_df = get_videos_stats(num_videos)
+        
+        return videos_df
+    
+    # Transform task
+    @task
+    def transform_video_data(
+        videos_df: pd.DataFrame, 
+        stats_list: list = _STATS_LIST
+    ) -> pd.DataFrame:
+        tranformed_df = transform_by_stats(stats_list)
+        
+        t_log.info("Transforming dataset based on specific stats needed")
+        
+        return tranformed_df
+    
+    # Load task
+    @task
+    def load_video_data(
+        transformed_df: pd.DataFrame,
+        duckdb_instance_name: str = _DUCK_DB_INSTANCE_NAME,
+        table_name: str = _DUCKDB_TABLE_NAME
+    ):
+        t_log.info("Loading video data into DuckDB")
+        cursor = duckdb.connect(duckdb_instance_name)
+        cursor.sql(
+            f"INSERT OR IGNORE INTO {table_name} BY ID SELECT * FROM transformed_df"
+        )
+        
+        t_log.info("Videos data loaded into DuckDB")
+        
+    
+    
+    
+    
