@@ -1,1 +1,7 @@
-# Astro Runtime includes the following pre-installed providers packages: https://www.astronomer.io/docs/astro/runtime-image-architecture#provider-packages
+pendulum
+tabulate
+pandas
+duckdb
+google_auth_oauthlib
+google-api-python-client
+apache-airflow-providers-google
