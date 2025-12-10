@@ -1,8 +1,7 @@
-apache-airflow==2.10.2
-pendulum==2.1.2
-tabulate==0.9.0
-pandas==2.1.0
-duckdb==1.9.0
+pendulum
+tabulate
+pandas
+duckdb
 google_auth_oauthlib
-googleapiclient
- 
+google-api-python-client
+apache-airflow-providers-google
