@@ -45,7 +45,7 @@ _BQ_TABLE_URI = f"{_BQ_PROJECT}.{_BQ_DATASET}.{_BQ_TABLE}"
         "retry_delay": duration(seconds=30),
     },
     tags=["data project", "ETL"],
-    is_paused_upon_creation=True,
+    is_paused_upon_creation=False,
 )
 def video_data_etl():
         
