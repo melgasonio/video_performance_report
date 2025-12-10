@@ -8,6 +8,7 @@ from the Youtube API and print's each video statistics.
 # This DAG uses the Taskflow API.
 from airflow.sdk import Asset, chain, Param, dag, task
 from pendulum import datetime, duration
+from google.cloud import bigquery
 from tabulate import tabulate
 import pandas as pd
 import duckdb
@@ -27,6 +28,11 @@ _DUCKDB_INSTANCE_NAME = os.getenv("DUCK_DB_INSTANCE_NAME", "include/db/performan
 _DUCKDB_TABLE_NAME = os.getenv("DUCKDB_TABLE_NAME", "performance_data")
 _DUCKDB_TABLE_URI = f"duckdb://{_DUCKDB_INSTANCE_NAME}/{_DUCKDB_TABLE_NAME}"
 
+_BQ_PROJECT = os.getenv("BQ_PROJECT")
+_BQ_DATASET = os.getenv("BQ_DATASET")
+_BQ_TABLE = os.getenv("BQ_TABLE")
+_BQ_TABLE_URI = f"{_BQ_PROJECT}.{_BQ_DATASET}.{_BQ_TABLE}"
+
 @dag(
     start_date=datetime(2025, 12, 10),
     schedule="@daily",
@@ -42,31 +48,6 @@ _DUCKDB_TABLE_URI = f"duckdb://{_DUCKDB_INSTANCE_NAME}/{_DUCKDB_TABLE_NAME}"
     is_paused_upon_creation=True,
 )
 def video_data_etl():
-    
-    # Setup task
-    @task
-    def create_perf_table_in_duckdb(
-        duckdb_instance_name: str = _DUCKDB_INSTANCE_NAME,
-        table_name: str = _DUCKDB_TABLE_NAME,
-    ) -> None:
-        t_log.info("Creating videos performance table in DuckDB")
-        
-        cursor = duckdb.connect(duckdb_instance_name)
-        
-        cursor.execute(
-            f"""
-            CREATE TABLE IF NOT EXISTS {table_name} (
-                id VARCHAR PRIMARY KEY,
-                title VARCHAR,
-                channel VARCHAR,
-                view INT,
-                comments INT,
-                likes INT
-            );"""
-        )
-        cursor.close()
-        
-        t_log.info(f"Table {table_name} created in DuckDB")
         
     # Extract task
     @task
@@ -86,41 +67,84 @@ def video_data_etl():
     
     # Load task
     @task(
-        outlets=[Asset(_DUCKDB_TABLE_URI)]
+        outlets=[Asset(_DUCKDB_TABLE_URI if _TARGET_DB=="duckdb" else _BQ_TABLE_URI)]
     ) # Define that this task produces updates to an Airflow dataset
     def load_video_data(
         transformed_df: pd.DataFrame,
         duckdb_instance_name: str = _DUCKDB_INSTANCE_NAME,
-        table_name: str = _DUCKDB_TABLE_NAME
+        duckdb_table_name: str = _DUCKDB_TABLE_NAME,
+        target_db: str = _TARGET_DB,
+        bq_project: str = _BQ_PROJECT,
+        bq_dataset: str = _BQ_DATASET,
+        bq_table: str = _BQ_TABLE,
     ):
-        t_log.info("Loading video data into DuckDB")
-        cursor = duckdb.connect(duckdb_instance_name)
-        cursor.register("df", transformed_df)
-        cursor.sql(
-            f"INSERT OR REPLACE INTO {table_name} SELECT * FROM df;"
-        )
         
-        t_log.info("Videos data loaded into DuckDB")
+        if target_db == "duckdb":
+            t_log.info("Loading video data into DuckDB")
+            cursor = duckdb.connect(duckdb_instance_name)
+            
+            # Conditional creation: create table if it doesn't exist
+            cursor.execute(
+                f"""
+                CREATE TABLE IF NOT EXISTS {duckdb_table_name} (
+                    id VARCHAR PRIMARY KEY,
+                    title VARCHAR,
+                    channel VARCHAR,
+                    view INT,
+                    comments INT,
+                    likes INT
+                );
+                """
+            )
+            
+            # Insert or replace data
+            cursor.register("df", transformed_df)
+            cursor.sql(
+                f"INSERT OR REPLACE INTO {duckdb_table_name} SELECT * FROM df;"
+            )
+            cursor.close()
+            t_log.info("Videos data loaded into DuckDB")
+        else:
+            t_log.info("Loading data into BigQuery")
+            
+            client = bigquery.Client(project=bq_project)
+            table_id = f"{bq_project}.{bq_dataset}.{bq_table}"
+            job = client.load_table_from_dataframe(
+                transformed_df,
+                table_id,
+                job_config=bigquery.LoadJobConfig(write_disposition="WRITE_TRUNCATE")
+            )
+            job.result()
+            t_log.info("Data loadd to BigQuery")
         
     # Prints loaded data to DuckDB
     @task
     def print_loaded_data(
+        target_db: str = _TARGET_DB,
         duckdb_instance_name: str = _DUCKDB_INSTANCE_NAME,
-        table_name: str = _DUCKDB_TABLE_NAME,
+        duckdb_table_name: str = _DUCKDB_TABLE_NAME,
+        bq_project: str = _BQ_PROJECT,
+        bq_dataset: str = _BQ_DATASET,
+        bq_table: str = _BQ_TABLE
     ):
-        cursor = duckdb.connect(duckdb_instance_name)
-        loaded_data_df = cursor.sql(f"SELECT * FROM {table_name};").df()
+        if target_db == "duckdb":
+            cursor = duckdb.connect(duckdb_instance_name)
+            loaded_data_df = cursor.sql(f"SELECT * FROM {duckdb_table_name};").df()
+            cursor.close()
+        else:
+            client = bigquery.Client(project=bq_project)
+            table_id = f"{bq_project}.{bq_dataset}.{bq_table}"
+            query = f"SELECT * FROM `{table_id}` LIMIT 30" # Show data for the last 30 days
+            loaded_data_df = client.query(query).to_dataframe()
 
         t_log.info(tabulate(loaded_data_df, headers="keys", tablefmt="pretty"))
         
-        
-    create = create_perf_table_in_duckdb()
     extract = extract_video_data()
     transform = transform_video_data(extract)
     load = load_video_data(transform)
     printer = print_loaded_data()
     
-    create >> extract >> transform >> load >> printer
+    extract >> transform >> load >> printer
 
 # Instantiate the DAG
 video_data_etl()
