@@ -21,7 +21,9 @@ from include.custom_functions.video_functions import get_videos_stats, transform
 t_log = logging.getLogger("airflow.task")
 
 # Define variables used in a DAG as environment variables in .env for your Airflow instance to standardize your DAGs
-_DUCKDB_INSTANCE_NAME = os.getenv("DUCK_DB_INSTANCE_NAME", "include/performance.db")
+_TARGET_DB = os.getenv("TARGET_DB", "duckdb")
+
+_DUCKDB_INSTANCE_NAME = os.getenv("DUCK_DB_INSTANCE_NAME", "include/db/performance.db")
 _DUCKDB_TABLE_NAME = os.getenv("DUCKDB_TABLE_NAME", "performance_data")
 _DUCKDB_TABLE_URI = f"duckdb://{_DUCKDB_INSTANCE_NAME}/{_DUCKDB_TABLE_NAME}"
 
@@ -55,7 +57,8 @@ def video_data_etl():
             f"""
             CREATE TABLE IF NOT EXISTS {table_name} (
                 id VARCHAR PRIMARY KEY,
-                name VARCHAR,
+                title VARCHAR,
+                channel VARCHAR,
                 view INT,
                 comments INT,
                 likes INT
