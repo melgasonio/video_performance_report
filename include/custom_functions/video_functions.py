@@ -2,6 +2,7 @@ from google_auth_oauthlib import flow
 from googleapiclient import discovery
 import os
 import pandas as pd
+import uuid
 
 class API():
     def __init__(self, key):
@@ -30,12 +31,9 @@ def get_videos_stats():
     response = api.return_videos_stats(video_ids)
     items = response.get("items", [])
     
-    data = {'id': [], 'stats': [], 'title': [], 'channel': []}
+    data = {'stats': [], 'title': [], 'channel': []}
     
     for item in items:
-        id_column = data.get("id")
-        id_column.append(item.get("id"))
-        
         stats_column = data.get("stats")
         stats_column.append(item.get("statistics"))
         
@@ -52,16 +50,15 @@ def get_videos_stats():
     return data_df
 
 # Transform returned data
-def transform_df():
-    data_df = get_videos_stats()
+def transform_df(data_df):
     
     transformed_data = {
-        'id': data_df['id'],
-        'title': data_df['title'],
-        'channel': data_df['channel'],
-        'views': data_df['stats'].apply(lambda x: int(x.get("viewCount", 0))),
-        'comments': data_df['stats'].apply(lambda x: int(x.get("commentCount", 0))),
-        'likes': data_df['stats'].apply(lambda x: int(x.get("likeCount", 0))),
+        "id": [str(uuid.uuid4()) for _ in range(len(data_df))],
+        "title": data_df["title"],
+        "channel": data_df["channel"],
+        "views": data_df["stats"].apply(lambda x: int(x.get("viewCount", 0))),
+        "comments": data_df["stats"].apply(lambda x: int(x.get("commentCount", 0))),
+        "likes": data_df["stats"].apply(lambda x: int(x.get("likeCount", 0)))
     }
     
     transformed_df = pd.DataFrame(data=transformed_data)
