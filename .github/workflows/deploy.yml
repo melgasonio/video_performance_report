@@ -11,10 +11,6 @@ jobs:
           username: ${{ secrets.VM_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-<<<<<<< HEAD
-            cd ~/soniomelga/video_perf_etl
-=======
-            cd ~/my-airflow
->>>>>>> parent of 9469280 (fix: update directory to navigate in VM for workflows)
+            cd ~/video_perf_etl
             git pull origin main
-            astro dev restart -f
+            astro dev restart
