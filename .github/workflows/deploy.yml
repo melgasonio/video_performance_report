@@ -14,16 +14,5 @@ jobs:
             cd ~/video_perf_etl
             git pull origin main
 
-            # 1. Kill any existing containers and networks to free up port 5432
-            # 'astro dev kill' without the --force flag
-            astro dev kill || true
-            docker system prune -f
-            
-            # 2. Use the 'astro dev start' with the --no-tty logic 
-            # We use 'nohup' to run it in the background so it doesn't hang the GitHub Action
-            # and '2>&1' to capture errors.
-            nohup astro dev start --wait 5m > astro_logs.txt 2>&1 &
-            
-            # 3. Give it a few seconds to verify it didn't immediate crash
-            sleep 10
-            tail -n 20 astro_logs.txt
+            astro dev stop || True
+            astro dev start --wait 5m </dev/null
