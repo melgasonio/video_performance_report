@@ -13,4 +13,4 @@ jobs:
           script: |
             cd ~/video_perf_etl
             git pull origin main
-            astro dev restart
+            astro dev restart -f
