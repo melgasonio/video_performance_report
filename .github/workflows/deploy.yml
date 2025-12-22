@@ -14,5 +14,8 @@ jobs:
             cd ~/video_perf_etl
             git pull origin main
 
+            export TERM=xterm
+            export ASTRO_TTY=false
+
             astro dev stop || True
             astro dev start --wait 5m </dev/null
