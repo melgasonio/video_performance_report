@@ -1,0 +1,644 @@
+[2025-12-24T09:02:51.783+0000] {processor.py:186} INFO - Started process (PID=77) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:02:51.785+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:02:51.789+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:02:51.789+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:02:51.835+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:02:51.828+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:02:51.838+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:02:51.877+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.104 seconds
+[2025-12-24T09:03:10.994+0000] {processor.py:186} INFO - Started process (PID=137) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:03:10.997+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:03:11.004+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:03:11.003+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:03:11.046+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:03:11.037+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:03:11.049+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:03:11.098+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.118 seconds
+[2025-12-24T09:04:13.960+0000] {processor.py:186} INFO - Started process (PID=201) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:04:13.963+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:04:13.968+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:04:13.967+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:04:13.997+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:04:13.989+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:04:14.000+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:04:14.041+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.095 seconds
+[2025-12-24T09:04:11.602+0000] {processor.py:186} INFO - Started process (PID=267) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:04:11.603+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:04:11.607+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:04:11.607+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:04:11.629+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:04:11.625+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:04:11.631+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:04:11.663+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.071 seconds
+[2025-12-24T09:04:41.717+0000] {processor.py:186} INFO - Started process (PID=329) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:04:41.719+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:04:41.722+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:04:41.722+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:04:41.754+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:04:41.749+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:04:41.756+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:04:41.787+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.078 seconds
+[2025-12-24T09:04:51.012+0000] {processor.py:186} INFO - Started process (PID=394) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:04:51.015+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:04:51.020+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:04:51.019+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:04:51.077+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:04:51.069+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:04:51.080+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:04:51.121+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.121 seconds
+[2025-12-24T09:05:21.345+0000] {processor.py:186} INFO - Started process (PID=459) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:05:21.348+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:05:21.353+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:05:21.353+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:05:21.375+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:05:21.369+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:05:21.376+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:05:21.412+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.078 seconds
+[2025-12-24T09:05:25.924+0000] {processor.py:186} INFO - Started process (PID=495) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:05:25.925+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:05:25.929+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:05:25.928+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:05:25.949+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:05:25.944+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:05:25.951+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:05:25.996+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.082 seconds
+[2025-12-24T09:06:18.202+0000] {processor.py:186} INFO - Started process (PID=550) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:06:18.204+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:06:18.208+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:06:18.207+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:06:18.250+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:06:18.226+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:06:18.252+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:05:35.942+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.101 seconds
+[2025-12-24T09:06:39.213+0000] {processor.py:186} INFO - Started process (PID=612) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:06:39.214+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:06:39.220+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:06:39.219+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:06:39.254+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:06:39.248+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:06:39.256+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:06:39.289+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.086 seconds
+[2025-12-24T09:06:41.684+0000] {processor.py:186} INFO - Started process (PID=678) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:06:41.685+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:06:41.689+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:06:41.689+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:06:41.714+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:06:41.708+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:06:41.738+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:06:41.782+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.110 seconds
+[2025-12-24T09:07:11.249+0000] {processor.py:186} INFO - Started process (PID=744) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:07:11.254+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:07:11.260+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:07:11.259+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:07:11.292+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:07:11.280+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:07:11.294+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:07:53.681+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.101 seconds
+[2025-12-24T09:08:38.789+0000] {processor.py:186} INFO - Started process (PID=982) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:08:38.792+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:08:38.796+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:08:38.795+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:08:38.819+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:08:38.813+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:08:38.821+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:08:38.856+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.077 seconds
+[2025-12-24T09:09:18.818+0000] {processor.py:186} INFO - Started process (PID=1048) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:09:18.820+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:09:18.823+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:09:18.823+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:09:18.843+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:09:18.838+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:09:18.845+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:09:18.875+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.067 seconds
+[2025-12-24T09:09:16.352+0000] {processor.py:186} INFO - Started process (PID=1127) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:09:16.354+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:09:16.358+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:09:16.357+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:09:16.376+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:09:16.372+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:09:16.378+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:09:16.413+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.071 seconds
+[2025-12-24T09:10:23.979+0000] {processor.py:186} INFO - Started process (PID=1187) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:10:23.981+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:10:23.984+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:10:23.984+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:10:24.015+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:10:24.011+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:10:24.016+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:10:24.048+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.078 seconds
+[2025-12-24T09:10:16.576+0000] {processor.py:186} INFO - Started process (PID=1259) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:10:16.578+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:10:16.583+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:10:16.582+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:10:16.606+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:10:16.601+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:10:16.608+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:10:16.643+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.081 seconds
+[2025-12-24T09:11:28.708+0000] {processor.py:186} INFO - Started process (PID=1308) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:11:28.710+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:11:28.713+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:11:28.713+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:10:46.396+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:10:46.391+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:10:46.398+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:10:46.454+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.100 seconds
+[2025-12-24T09:11:38.658+0000] {processor.py:186} INFO - Started process (PID=1365) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:11:38.659+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:11:38.665+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:11:38.664+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:11:38.688+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:11:38.683+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:11:38.690+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:11:38.724+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.077 seconds
+[2025-12-24T09:11:27.201+0000] {processor.py:186} INFO - Started process (PID=1428) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:11:27.202+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:11:27.207+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:11:27.206+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:11:27.231+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:11:27.226+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:11:27.233+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:11:27.270+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.084 seconds
+[2025-12-24T09:12:29.612+0000] {processor.py:186} INFO - Started process (PID=1491) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:12:29.614+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:12:29.618+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:12:29.618+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:12:29.643+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:12:29.638+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:12:29.645+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:12:29.681+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.080 seconds
+[2025-12-24T09:12:41.669+0000] {processor.py:186} INFO - Started process (PID=1555) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:12:41.670+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:12:41.675+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:12:41.674+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:12:41.698+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:12:41.692+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:12:41.700+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:12:41.737+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.078 seconds
+[2025-12-24T09:13:30.481+0000] {processor.py:186} INFO - Started process (PID=1622) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:13:30.483+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:13:30.486+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:13:30.486+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:13:30.505+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:13:30.501+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:13:30.507+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:13:30.539+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.067 seconds
+[2025-12-24T09:14:24.024+0000] {processor.py:186} INFO - Started process (PID=1672) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:14:24.026+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:14:24.031+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:14:24.031+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:14:24.053+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:14:24.048+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:14:24.055+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:14:24.085+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.071 seconds
+[2025-12-24T09:15:19.081+0000] {processor.py:186} INFO - Started process (PID=1744) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:15:19.083+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:15:19.087+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:15:19.086+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:15:19.109+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:15:19.103+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:15:19.111+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:14:36.816+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.077 seconds
+[2025-12-24T09:15:07.586+0000] {processor.py:186} INFO - Started process (PID=1808) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:15:07.587+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:15:07.590+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:15:07.590+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:15:07.615+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:15:07.611+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:15:07.617+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:15:07.652+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.075 seconds
+[2025-12-24T09:15:38.396+0000] {processor.py:186} INFO - Started process (PID=1871) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:15:38.397+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:15:38.401+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:15:38.401+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:15:38.420+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:15:38.416+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:15:38.422+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:15:38.458+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.071 seconds
+[2025-12-24T09:16:39.623+0000] {processor.py:186} INFO - Started process (PID=1937) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:16:39.629+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:16:39.633+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:16:39.633+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:16:39.667+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:16:39.661+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:16:39.670+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:16:39.707+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.097 seconds
+[2025-12-24T09:23:27.288+0000] {processor.py:186} INFO - Started process (PID=77) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:23:27.290+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:23:27.294+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:23:27.294+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:23:27.316+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:23:27.311+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:23:27.319+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:23:27.360+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.080 seconds
+[2025-12-24T09:23:57.833+0000] {processor.py:186} INFO - Started process (PID=144) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:23:57.835+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:23:57.841+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:23:57.841+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:23:57.887+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:23:57.878+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:23:57.892+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:23:57.965+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.153 seconds
+[2025-12-24T09:24:02.824+0000] {processor.py:186} INFO - Started process (PID=175) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:24:02.825+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:24:02.829+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:24:02.829+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:24:02.861+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:24:02.848+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:24:02.866+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:24:02.912+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.100 seconds
+[2025-12-24T09:24:53.701+0000] {processor.py:186} INFO - Started process (PID=215) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:24:53.709+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:24:53.716+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:24:53.715+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:24:53.761+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:24:53.753+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:24:53.763+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:24:11.486+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.128 seconds
+[2025-12-24T09:24:41.628+0000] {processor.py:186} INFO - Started process (PID=276) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:24:41.633+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:24:41.642+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:24:41.642+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:24:41.699+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:24:41.693+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:24:41.701+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:24:41.741+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.129 seconds
+[2025-12-24T09:24:52.874+0000] {processor.py:186} INFO - Started process (PID=332) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:24:52.876+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:24:52.880+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:24:52.880+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:24:52.904+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:24:52.898+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:24:52.908+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:24:52.945+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.084 seconds
+[2025-12-24T09:25:11.523+0000] {processor.py:186} INFO - Started process (PID=394) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:25:11.525+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:25:11.530+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:25:11.529+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:25:11.560+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:25:11.551+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:25:11.562+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:25:11.604+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.093 seconds
+[2025-12-24T09:25:17.912+0000] {processor.py:186} INFO - Started process (PID=448) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:25:17.914+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:25:17.918+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:25:17.918+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:25:17.947+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:25:17.941+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:25:17.950+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:25:17.995+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.095 seconds
+[2025-12-24T09:25:48.685+0000] {processor.py:186} INFO - Started process (PID=506) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:25:48.689+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:25:48.695+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:25:48.694+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:25:48.754+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:25:48.746+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:25:48.757+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:25:48.811+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.137 seconds
+[2025-12-24T09:25:53.155+0000] {processor.py:186} INFO - Started process (PID=537) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:25:53.157+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:25:53.162+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:25:53.161+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:25:53.191+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:25:53.186+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:25:53.193+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:25:53.246+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.105 seconds
+[2025-12-24T09:26:03.017+0000] {processor.py:186} INFO - Started process (PID=601) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:26:03.019+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:26:03.024+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:26:03.023+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:26:03.073+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:26:03.066+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:26:03.076+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:26:03.128+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.123 seconds
+[2025-12-24T09:26:53.762+0000] {processor.py:186} INFO - Started process (PID=657) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:26:53.766+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:26:53.776+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:26:53.775+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:26:11.570+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:26:11.532+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:26:11.573+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:26:11.674+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.251 seconds
+[2025-12-24T09:27:05.172+0000] {processor.py:186} INFO - Started process (PID=711) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:27:05.174+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:27:05.178+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:27:05.178+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:27:05.204+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:27:05.198+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:27:05.206+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:27:05.242+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.082 seconds
+[2025-12-24T09:27:40.448+0000] {processor.py:186} INFO - Started process (PID=873) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:27:40.451+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:27:40.455+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:27:40.455+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:27:40.487+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:27:40.479+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:27:40.490+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:27:40.534+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.102 seconds
+[2025-12-24T09:27:48.252+0000] {processor.py:186} INFO - Started process (PID=945) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:27:48.254+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:27:48.261+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:27:48.260+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:27:48.286+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:27:48.281+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:27:48.288+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:27:48.352+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.111 seconds
+[2025-12-24T09:27:58.292+0000] {processor.py:186} INFO - Started process (PID=1005) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:27:58.294+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:27:58.301+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:27:58.300+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:27:58.327+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:27:58.322+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:27:58.329+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:27:58.365+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.087 seconds
+[2025-12-24T09:28:11.541+0000] {processor.py:186} INFO - Started process (PID=1070) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:28:11.543+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:28:11.547+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:28:11.546+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:28:11.597+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:28:11.591+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:28:11.602+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:28:11.653+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.123 seconds
+[2025-12-24T09:29:10.397+0000] {processor.py:186} INFO - Started process (PID=1126) to work on /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:29:10.399+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/video_data_etl.py for tasks to queue
+[2025-12-24T09:29:10.403+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:29:10.403+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:29:10.430+0000] {logging_mixin.py:190} INFO - [2025-12-24T09:29:10.425+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/video_data_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/video_data_etl.py", line 9, in <module>
+    from airflow.sdk import Asset, dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-12-24T09:29:10.432+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/video_data_etl.py
+[2025-12-24T09:29:10.485+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/video_data_etl.py took 0.100 seconds
