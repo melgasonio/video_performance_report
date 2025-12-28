@@ -8,12 +8,16 @@ from the Youtube API and print's each video statistics.
 # This DAG uses the Taskflow API.
 from airflow.sdk import Asset, dag, task
 from pendulum import datetime, duration
-from airflow.providers.google.cloud.hooks.bigquery import BigQueryHook
+from airflow.providers.google.cloud.hooks.bigquery import BigQueryHook, LoadJobConfig, SchemaField
 from google.cloud import bigquery
 from tabulate import tabulate
 import pandas as pd
 import logging
 import os
+import sys
+
+# Ensure /opt/airflow is on sys.path
+sys.path.append(os.path.join(os.environ.get('AIRFLOW_HOME', '/opt/airflow')))
 
 # Modularized helper functions
 from include.custom_functions.video_functions import get_videos_stats, transform_df
@@ -69,20 +73,20 @@ def video_data_etl():
         t_log.info("Loading data into BigQuery")
             
         hook = BigQueryHook(
-            gcp_conn_id="gcp_data-projects-480807",
+            gcp_conn_id="google_cloud_default",
             use_legacy_sql=False
         )
         
         client = hook.get_client()
         
-        job_config = bigquery.LoadJobConfig(
+        job_config = LoadJobConfig(
             schema=[
-                bigquery.SchemaField("id", "STRING"),
-                bigquery.SchemaField("title", "STRING"),
-                bigquery.SchemaField("channel", "STRING"),
-                bigquery.SchemaField("views", "INTEGER"),
-                bigquery.SchemaField("comments", "INTEGER"),
-                bigquery.SchemaField("likes", "INTEGER"),
+                SchemaField("id", "STRING"),
+                SchemaField("title", "STRING"),
+                SchemaField("channel", "STRING"),
+                SchemaField("views", "INTEGER"),
+                SchemaField("comments", "INTEGER"),
+                SchemaField("likes", "INTEGER"),
             ],
             write_disposition="WRITE_TRUNCATE"
         )
@@ -101,7 +105,7 @@ def video_data_etl():
         table_id: str = _BQ_TABLE_ID
     ):
         hook = BigQueryHook(
-            gcp_conn_id="gcp_data-projects-480807",
+            gcp_conn_id="google_cloud_default",
             use_legacy_sql=False
         )
         

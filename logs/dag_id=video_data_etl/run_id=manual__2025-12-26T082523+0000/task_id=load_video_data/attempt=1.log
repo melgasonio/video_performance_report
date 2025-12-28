@@ -1,0 +1,6 @@
+{"timestamp":"2025-12-26T08:25:40.280707Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-12-26T08:25:40.282383Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/video_data_etl.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-12-26T08:25:42.542878Z","level":"info","event":"Loading data into BigQuery","logger":"airflow.task","filename":"video_data_etl.py","lineno":73}
+{"timestamp":"2025-12-26T08:25:42.564633Z","level":"warning","event":"Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.","logger":"airflow.sdk.definitions.connection","filename":"connection.py","lineno":130}
+{"timestamp":"2025-12-26T08:25:46.012037Z","level":"info","event":"Data loaded to BigQuery","logger":"airflow.task","filename":"video_data_etl.py","lineno":100}
+{"timestamp":"2025-12-26T08:25:46.012273Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":217}
