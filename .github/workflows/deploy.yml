@@ -15,5 +15,7 @@ jobs:
             git pull origin main
 
             docker compose down --volumes --rmi all
+            export AIRFLOW_UID=$(id -u)
             docker compose up airflow-init -d
+            docker compose logs -f airflow-init | grep -q "All done." || sleep 30
             docker compose up -d
